@@ -34,7 +34,7 @@ def get_size(size):
 
     units = ["Bytes", "KB", "MB", "GB", "TB", "PB", "EB"]
     size = float(size)
-    i = 0
+    i = 0 
     while size >= 1024.0 and i < len(units):
         i += 1
         size /= 1024.0
@@ -60,7 +60,7 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('💝 sᴜʙsᴄʀɪʙᴇ ᴍʏ ʏᴏᴜᴛᴜʙᴇ ᴄʜᴀɴɴᴇʟ', url='https://instagram.com/be_smile5214')
+            InlineKeyboardButton('💝 Fᴏʟʟᴏᴡ ᴍᴇ ɪɴ Iɴsᴛᴀɢʀᴀᴍ', url='https://instagram.com/be_smile5214')
             ],[
             InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/Anity_botsupport'),
             InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/Anity_managementbots')
@@ -338,7 +338,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('💝 sᴜʙsᴄʀɪʙᴇ ᴍʏ ʏᴏᴜᴛᴜʙᴇ ᴄʜᴀɴɴᴇʟ', url='https://instagram.com/be_smile5214')
+            InlineKeyboardButton('💝 Fᴏʟʟᴏᴡ ᴍᴇ ɪɴ Iɴsᴛᴀɢʀᴀᴍ', url='https://instagram.com/be_smile5214')
             ],[
             InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/Anity_botsupport'),
             InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/Anity_managementbots')
